@@ -1,0 +1,139 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.woff2') format('woff2'),
+        url('OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+a {
+    color: rgb(191, 116, 116);
+    text-decoration: underline;
+    outline: none;
+}
+
+a:visited {
+    color: rgb(119, 74, 74);
+}
+
+a:hover, a:focus {
+    color: rgb(159, 67, 67);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(159, 67, 67);
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+section p a {
+    background: url("external-link-52.png") no-repeat 96% 0;
+    background-size: 0.6875em 0.6875em;
+    padding-right: 0.9375em;
+    }
+    
+li {
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+
+nav ul li {
+    list-style: none;
+    border: 0.0625em solid rgb(191, 116, 116);
+    text-align: center;
+    margin-bottom: 1.5em; 
+    width: 15.625em;
+    height: 4.375em;
+    line-height: 4.375em;
+    margin-left: -2.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+}
